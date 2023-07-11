@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Dynamo Font Color 
+        </title>
+        <script>
+            function changeColor(){
+                document.getElementById("txtColorChange").style.color = document.getElementById("colorpick").value;
+            }
+        </script>
+    </head>
+    <body>
+       <center>
+        <h1>How To Change The Text Color Dynamically</h1>
+        <h2>Using Javascript</h2>
+        <hr/>
+        <input type = "button" value = "Change Color" onclick="changeColor()"/>
+        <input type = "color" id = "colorpick"/>
+        <hr/>
+        <p id = "txtColorChange">This is Sachin..!</p>
+       </center>
+    </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>
+		How to change the background color
+		after clicking the button?
+	</title>
+</head>
+
+<body style="text-align:center;">
+
+	<h1 style="color:green;">
+		Bg Color Button
+	</h1>
+
+	<p id="aqua_UP" style="font-size: 16px;
+						font-weight: bold;">
+	</p>
+
+	<button onclick="bg_Run()">
+		Click here
+	</button>
+
+	<p id="aqua_DOWN" style="color:green;
+							font-size: 20px;
+							font-weight: bold;">
+	</p>
+
+	<script>
+		var el_up = document.getElementById("aqua_UP");
+		var el_down = document.getElementById("aqua_DOWN");
+		var str = "Click on button to change the background color";
+				
+		el_up.innerHTML = str;
+				
+		function changeColor(color) {
+			document.body.style.background = color;
+		}
+		
+		function bg_Run() {
+			changeColor('yellow');
+			el_down.innerHTML = "Background Color changed";
+		}		
+	</script>
+</body>
+
+</html>

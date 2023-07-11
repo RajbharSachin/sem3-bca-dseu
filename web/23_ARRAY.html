@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <title></title>
+</head>
+<body>
+    <?php
+    $marks = array(
+        "Preeti" => array(
+            "WTE" => 85,
+            "DBMS" => 97,
+            "FTW" => 75,
+            "CN" => 84,
+            "English" => 88
+        ),
+        "Amit" => array(
+            "WTE" => 78,
+            "DBMS" => 75,
+            "FTW" => 95,
+            "CN" => 66,
+            "English" => 87
+        ),
+    );
+    $keys = array_keys($marks);
+    for ($i = 0; $i < count($marks); $i++) {
+        echo $keys[$i] . "{<br>";
+        foreach ($marks[$keys[$i]] as $key => $value) {
+            echo $key . " : " . $value . "<br>";
+        }
+        echo "( <br>";
+    }
+    ?>
+</body>
+
+</html>
